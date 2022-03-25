@@ -1,5 +1,25 @@
 # Git-command[参考](https://mp.weixin.qq.com/s/PXu2YcNXvaRVxliKvnnYQg)
 - git的一些常用命令
+- 6步git提交到你的仓库
+```
+# 1.cd到你的文件夹
+cd /yourfilename
+
+#2.git 初始化
+git init
+
+#3.git 到本地
+git add.
+
+#4.git 远程链接
+git remote add origin https://github.com/yourhub.git
+
+#5.配置邮箱
+ git config --global “youremail@yeah.net”
+#6.push它进入你的main分支
+git push -u origin master
+#这个master可能得改一下 改成main 因为默认main 了不默认master了
+```
 
 ## 1.我刚才提交了什么?
 如果你用 git commit -a 提交了一次变化(changes)，而你又不确定到底这次提交了哪些内容。你就可以用下面的命令显示当前HEAD上的最近一次的提交(commit):
